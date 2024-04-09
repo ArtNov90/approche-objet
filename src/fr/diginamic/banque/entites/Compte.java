@@ -5,11 +5,18 @@ public class Compte {
 	private int numCompte;
 	private double soldeCompte;
 
-	// Constructeur ici
+	// Constructeur ici généré par l'IDE
 	public Compte(int numCompte, double soldeCompte) {
 		this.setNumCompte(numCompte);
 		this.setSoldeCompte(soldeCompte);
 	}
+	
+
+	@Override
+	public String toString() {
+		return "Numéro Compte =" + numCompte + ", Solde Compte=" + soldeCompte ;
+	}
+
 
 	// Getter Setter généré par l'IDE
 	public int getNumCompte() {

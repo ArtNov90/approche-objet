@@ -7,9 +7,9 @@ public class TestBanque {
 		Compte compte = new Compte(123456789, 1000.0);
 		
 		System.out.println("Numéro de compte : " + compte.getNumCompte());
-		System.out.println("Solde du compte : " + compte.getSoldeCompte());
+		System.out.println( compte);
 
-		System.out.println(compte);
+		
 
 	}
 
