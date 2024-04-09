@@ -4,10 +4,17 @@ public class TestBanque {
 
 	public static void main(String[] args) {
 
-		Compte compte = new Compte(123456789, 1000.0);
+		Compte[] comptes = new Compte[2];
 		
-		System.out.println("Numéro de compte : " + compte.getNumCompte());
-		System.out.println( compte);
+		comptes[0] = new Compte(123456789, 1000.0);
+		
+		comptes[1] = new CompteTaux(987654321, 2000.0, 0.05);
+		
+		for (int i = 0; i < comptes.length; i++) {
+		    System.out.println(comptes[i]);
+		}
+		
+		
 
 		
 
