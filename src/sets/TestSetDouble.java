@@ -9,7 +9,8 @@ public class TestSetDouble {
 		// Créer un HashSet
 		HashSet<Double> set = new HashSet<>();
 
-		// Ajouter les éléments
+		// Ajouter les élémentsch
+		
 		set.add(1.5);
 		set.add(8.25);
 		set.add(-7.32);
