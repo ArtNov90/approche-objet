@@ -10,10 +10,10 @@ public class Pigiste extends Intervenant {
 		this.MontantJournalierRemuneration = MontantJournalierRemuneration;
 
 	}
-
+	//Création de la méthode pour calculer le salaire du pigiste
 	public void getSalaire() {
 		double salaireMensuel = nbJoursTravail * MontantJournalierRemuneration;
-		System.out.println("Le salaire mensuel de " + getNom() + " " + getPrenom() + " est : " + salaireMensuel + " euros.");
+		System.out.println("Salaire mensuel: " + salaireMensuel + " euros");
 	}
 
 	public int getNbJoursTravail() {

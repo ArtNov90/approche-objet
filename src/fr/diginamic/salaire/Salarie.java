@@ -10,7 +10,7 @@ public class Salarie extends Intervenant {
 	}
 
 	public void getSalaire() {
-		  System.out.println("Le salaire mensuel de " + getNom() + " " + getPrenom() + " est : " + getSalaireMensuel() + " euros.");
+		System.out.println("Salaire mensuel: " + salaireMensuel + " euros");
 	}
 
 	public double getSalaireMensuel() {
