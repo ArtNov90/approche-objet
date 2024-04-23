@@ -9,4 +9,14 @@ abstract class Piece {
 		this.superficie = superficie;
 		this.etage = etage;
 	}
+
+	public double getSuperficie() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public int getEtage() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }

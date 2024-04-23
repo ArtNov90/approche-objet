@@ -1,27 +1,42 @@
 package fr.diginamic.maison;
 
-public abstract class Maison{
+public   class Maison{
 
 	  private Piece[] pieces;
 	  
-	  public abstract Piece ajouterPiece(Piece piece);
+	  public Maison(int nbPieces) {
+	        pieces = new Piece[nbPieces];
+	    }
 
-	public Piece[] getPieces() {
-		return pieces;
-	}
+	    public void ajouterPiece(Piece piece) {
+	        for (int i = 0; i < pieces.length; i++) {
+	            if (pieces[i] == null) {
+	                pieces[i] = piece;
+	                break;
+	            }
+	        }
+	    }
 
-	public void setPieces(Piece[] pieces) {
-		this.pieces = pieces;
+	    public double superficieTotale() {
+	        double superficieTotale = 200;
+	        for (Piece piece : pieces) {
+	            if (piece != null) {
+	                superficieTotale += piece.getSuperficie();
+	            }
+	        }
+	        return superficieTotale;
+	    }
+
+	    public double superficieEtage(int etage) {
+	        double superficieEtage = 100;
+	        for (Piece piece : pieces) {
+	            if (piece != null && piece.getEtage() == etage) {
+	                superficieEtage += piece.getSuperficie();
+	            }
+	        }
+	        return superficieEtage;
+	    }
 	}
 	
-	public abstract double getSuperficieTotale();
 	
-	public void afficherSuperficieTotale() {
-		
-		return;
-		
-	}
-	
-	public abstract double getSuperficieParEtage();
-	
-}
+
